@@ -50,7 +50,7 @@ class PessoaController
         $em->persist($pessoa);
         $em->flush();
 
-        return new JsonResponse(['message' => 'Pessoa criada'], 201);
+        return new JsonResponse(['message' => 'Pessoa criada com sucesso'], 201);
     }
 
     #[Route('/{id}', methods: ['PUT'])]
@@ -71,7 +71,7 @@ class PessoaController
 
         $em->flush();
 
-        return new JsonResponse(['message' => 'Pessoa atualizada']);
+        return new JsonResponse(['message' => 'Pessoa atualizada com sucesso']);
     }
 
     #[Route('/{id}', methods: ['DELETE'])]
@@ -80,6 +80,6 @@ class PessoaController
         $em->remove($pessoa);
         $em->flush();
 
-        return new JsonResponse(['message' => 'Pessoa removida']);
+        return new JsonResponse(['message' => 'Pessoa removida com sucesso']);
     }
 }
