@@ -10,7 +10,14 @@ cd nome_do_projeto
 Instale os pacotes necessários:
 
 composer require orm maker serializer
+<<<<<<< HEAD
 🧩 3. Criar Entidade
+=======
+``
+3. Criar Entidade e Controller
+
+``
+>>>>>>> 15a26cf8648fec9bff595d214c026d353f68bdbf
 php bin/console make:entity Pessoa
 Campos da entidade:
 nome
@@ -56,4 +63,52 @@ PUT http://localhost:8000/api/pessoas/{id}
 DELETE http://localhost:8000/api/pessoas/{id}
 🧪 9. Testar com Postman
 
+<<<<<<< HEAD
 Use o Postman para testar os endpoints.
+=======
+### POST - CRIAR
+
+```
+http://localhost:8000/api/pessoas
+```
+
+### GET - LISTAR
+
+```
+http://localhost:8000/api/pessoas
+```
+
+---
+
+### GET - BUSCA POR ID
+
+```
+http://localhost:8000/api/pessoas/{id}
+```
+
+---
+
+### PUT - ATUALIZAR
+
+```
+http://localhost:8000/api/pessoas/{id}
+```
+
+---
+
+### DELETE - DELETAR
+
+```
+http://localhost:8000/api/pessoas/{id}
+```
+
+---
+
+### POST - CRIAR
+
+```
+http://localhost:8000/api/pessoas/
+```
+
+---
+>>>>>>> 15a26cf8648fec9bff595d214c026d353f68bdbf
