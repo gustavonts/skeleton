@@ -23,12 +23,18 @@ class PessoaController
     }
 
     #[Route('/{id}', methods: ['GET'])]
-    public function show(Pessoa $pessoa, SerializerInterface $serializer): JsonResponse
+    public function show(int $id, PessoaRepository $repo,  SerializerInterface $serializer): JsonResponse
     {
+        $pessoa = $repo->find($id);
+
+        if (!$pessoa) {
+            return $this->json(['erro' => 'Pessoa não encontrada'], 404);
+        }
+
         $json = $serializer->serialize($pessoa, 'json');
 
         return new JsonResponse($json, 200, [], true);
-    }
+}
 
     #[Route('', methods: ['POST'])]
     public function create(Request $request, EntityManagerInterface $em): JsonResponse
