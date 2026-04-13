@@ -44,16 +44,22 @@ Acesse no navegador:
 👉 http://localhost:8000
 
 🔗 8. Rotas da API (CRUD)
+
 📌 Criar (POST)
 POST http://localhost:8000/api/pessoas
+
 📌 Listar (GET)
 GET http://localhost:8000/api/pessoas
+
 📌 Buscar por ID (GET)
 GET http://localhost:8000/api/pessoas/{id}
+
 📌 Atualizar (PUT)
 PUT http://localhost:8000/api/pessoas/{id}
+
 📌 Deletar (DELETE)
 DELETE http://localhost:8000/api/pessoas/{id}
+
 🧪 9. Testar com Postman
 
 Use o Postman para testar os endpoints.
