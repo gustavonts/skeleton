@@ -6,7 +6,6 @@ composer create-project symfony/skeleton nome_do_projeto
 cd nome_do_projeto
 ``
 2. Instalar Dependências (ORM, Maker e Serializer)
-Bash
 ``
 composer require orm maker serializer
 ``
@@ -21,6 +20,7 @@ php bin/console make:entity Pessoa
 ``
 php bin/console make:controller PessoaController
 ``
+
 4. Configurar Banco de Dados
 No arquivo .env, ajuste a conexão (exemplo para SQLite):
 
@@ -28,11 +28,13 @@ Snippet de código
 ``
 DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db"
 ``
+
 Em seguida, crie o banco:
 
 ``
 php bin/console doctrine:database:create
 ``
+
 5. Rodar a Aplicação
 ``
 php -S localhost:8000 -t public
