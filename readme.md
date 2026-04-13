@@ -1,4 +1,4 @@
-Siga os passos abaixo para configurar e rodar o projeto localmente.
+# Siga os passos abaixo para configurar e rodar o projeto localmente.
 
 1. Criar o Projeto
 ``
@@ -10,13 +10,11 @@ cd nome_do_projeto
 composer require orm maker serializer
 ``
 3. Criar Entidade e Controller
-
-# Siga as instruções no terminal para adicionar os campos
 ``
 php bin/console make:entity Pessoa
 ``
 
-# Gera o controller com a rota padrão
+- Gera o controller com a rota padrão
 ``
 php bin/console make:controller PessoaController
 ``
