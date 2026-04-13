@@ -11,7 +11,6 @@ composer require orm maker serializer
 ``
 3. Criar Entidade e Controller
 
-# Siga as instruções no terminal para adicionar os campos
 ``
 php bin/console make:entity Pessoa
 ``
