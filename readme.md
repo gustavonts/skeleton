@@ -23,7 +23,19 @@ composer require orm maker serializer
 
 ---
 
-## 🧩 3. Criar Entidade
+## 📚 3. Editar o PHP.ini
+
+Retire o  ;  das seguintes linhas do arquivo:
+
+```bash
+extension=pdo_pgsql
+extension=pgsql
+```
+
+---
+
+
+## 🧩 4. Criar Entidade
 
 ```bash
 php bin/console make:entity Pessoa
@@ -44,7 +56,7 @@ php bin/console make:entity Pessoa
 
 ---
 
-## 🎮 4. Criar Controller
+## 🎮 5. Criar Controller
 
 ```bash
 php bin/console make:controller PessoaController
@@ -52,7 +64,7 @@ php bin/console make:controller PessoaController
 
 ---
 
-## 🗄️ 5. Configurar Banco de Dados
+## 🗄️ 6. Configurar Banco de Dados
 
 Edite o arquivo `.env`:
 
@@ -68,7 +80,7 @@ php bin/console doctrine:database:create
 
 ---
 
-## 🔄 6. Criar Migrações
+## 🔄 7. Criar Migrações
 
 ```bash
 php bin/console make:migration
@@ -77,7 +89,7 @@ php bin/console doctrine:migrations:migrate
 
 ---
 
-## ▶️ 7. Rodar a Aplicação
+## ▶️ 8. Rodar a Aplicação
 
 ```bash
 php -S localhost:8000 -t public
@@ -88,7 +100,7 @@ Acesse no navegador:
 
 ---
 
-## 🔗 8. Rotas da API (CRUD)
+## 🔗 9. Rotas da API (CRUD)
 
 ### 📌 Criar (POST)
 ```http
