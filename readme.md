@@ -10,14 +10,7 @@ cd nome_do_projeto
 Instale os pacotes necessários:
 
 composer require orm maker serializer
-<<<<<<< HEAD
 🧩 3. Criar Entidade
-=======
-``
-3. Criar Entidade e Controller
-
-``
->>>>>>> 15a26cf8648fec9bff595d214c026d353f68bdbf
 php bin/console make:entity Pessoa
 Campos da entidade:
 nome
